@@ -1,7 +1,7 @@
-Source: deepin-terminal
+Source: velora-terminal
 Section: utils
 Priority: optional
-Maintainer: Deepin Packages Builder <packages@deepin.org>
+Maintainer: Lingmo OS Team <team@lingmo.org>
 Build-Depends:
  debhelper(>= 11),
  cmake,
@@ -22,8 +22,8 @@ Build-Depends:
  libchardet-dev,
  libuchardet-dev (>= 0.0.6),
  libicu-dev
-Standards-Version: 4.5.1
-Homepage: https://www.deepin.com/
+Standards-Version: 4.5.0
+Homepage: https://github.com/LingmoOS/velora-terminal
 
 Package: deepin-terminal
 Architecture: any
