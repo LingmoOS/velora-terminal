@@ -5,7 +5,7 @@
 
 %define libname libqtermwidget5
 
-Name:           deepin-terminal
+Name:           lingmo-terminal
 Version:        5.4.1.1
 Release:        %{specrelease}
 Summary:        Default terminal emulation application for Deepin
@@ -101,7 +101,7 @@ ldconfig
 %{_datadir}/%{name}/translations/*.qm
 %{_datadir}/icons/hicolor/scalable/apps/%{name}.svg
 %{_datadir}/applications/%{name}.desktop
-%{_datadir}/deepin-manual/manual-assets/application/deepin-terminal/terminal/
+%{_datadir}/deepin-manual/manual-assets/application/lingmo-terminal/terminal/
 
 %files -n %{libname}
 %{_libdir}/libterminalwidget5.so.0.14.1

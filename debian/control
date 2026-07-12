@@ -1,4 +1,4 @@
-Source: velora-terminal
+Source: lingmo-terminal
 Section: utils
 Priority: optional
 Maintainer: Lingmo OS Team <team@lingmo.org>
@@ -23,9 +23,9 @@ Build-Depends:
  libuchardet-dev (>= 0.0.6),
  libicu-dev
 Standards-Version: 4.5.0
-Homepage: https://github.com/LingmoOS/velora-terminal
+Homepage: https://github.com/LingmoOS/lingmo-terminal
 
-Package: deepin-terminal
+Package: lingmo-terminal
 Architecture: any
 Depends:
  ${shlibs:Depends},

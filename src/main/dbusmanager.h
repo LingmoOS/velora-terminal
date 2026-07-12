@@ -14,7 +14,7 @@
 #include <QVariant>
 
 // deepin-terminal
-#define TERMINALSERVER "com.deepin.terminal.reborn"
+#define TERMINALSERVER "com.lingmo.terminal.reborn"
 #define TERMINALINTERFACE "/window"
 
 // kwin dbus
@@ -22,30 +22,30 @@
 #define KWINDBUSPATH "/KWin"
 
 // deepin Appearance
-inline const char *getAppearanceService() { return Dtk::Core::DSysInfo::majorVersion().toInt() >= 23 ? "org.deepin.dde.Appearance1" : "com.deepin.daemon.Appearance"; }
-inline const char *getAppearancePath() { return Dtk::Core::DSysInfo::majorVersion().toInt() >= 23 ? "/org/deepin/dde/Appearance1" : "/com/deepin/daemon/Appearance"; }
+inline const char *getAppearanceService() { return Dtk::Core::DSysInfo::majorVersion().toInt() >= 23 ? "org.lingmo.Appearance1" : "com.lingmo.daemon.Appearance"; }
+inline const char *getAppearancePath() { return Dtk::Core::DSysInfo::majorVersion().toInt() >= 23 ? "/org/lingmo/Appearance1" : "/com/lingmo/daemon/Appearance"; }
 #define APPEARANCESERVICE getAppearanceService()
 #define APPEARANCEPATH getAppearancePath()
 
 // sound effect 音效服务
-inline const char *getSoundEffectService() { return Dtk::Core::DSysInfo::majorVersion().toInt() >= 23 ? "org.deepin.dde.SoundEffect1" : "com.deepin.daemon.SoundEffect"; }
-inline const char *getSoundEffectPath() { return Dtk::Core::DSysInfo::majorVersion().toInt() >= 23 ? "/org/deepin/dde/SoundEffect1" : "/com/deepin/daemon/SoundEffect"; }
-inline const char *getSoundEffectInterface() { return Dtk::Core::DSysInfo::majorVersion().toInt() >= 23 ? "org.deepin.dde.SoundEffect1" : "com.deepin.daemon.SoundEffect"; }
+inline const char *getSoundEffectService() { return Dtk::Core::DSysInfo::majorVersion().toInt() >= 23 ? "org.lingmo.SoundEffect1" : "com.lingmo.daemon.SoundEffect"; }
+inline const char *getSoundEffectPath() { return Dtk::Core::DSysInfo::majorVersion().toInt() >= 23 ? "/org/lingmo/SoundEffect1" : "/com/lingmo/daemon/SoundEffect"; }
+inline const char *getSoundEffectInterface() { return Dtk::Core::DSysInfo::majorVersion().toInt() >= 23 ? "org.lingmo.SoundEffect1" : "com.lingmo.daemon.SoundEffect"; }
 #define SOUND_EFFECT_METHOD(method) QDBusMessage::createMethodCall(getSoundEffectService(), getSoundEffectPath(), getSoundEffectInterface(), (method))
 
 // gesture 触控板手势
-inline const char *getGestureService() { return Dtk::Core::DSysInfo::majorVersion().toInt() >= 23 ? "org.deepin.dde.Gesture1" : "com.deepin.daemon.Gesture"; }
-inline const char *getGesturePath() { return Dtk::Core::DSysInfo::majorVersion().toInt() >= 23 ? "/org/deepin/dde/Gesture1" : "/com/deepin/daemon/Gesture"; }
-inline const char *getGestureInterface() { return Dtk::Core::DSysInfo::majorVersion().toInt() >= 23 ? "org.deepin.dde.Gesture1" : "com.deepin.daemon.Gesture"; }
+inline const char *getGestureService() { return Dtk::Core::DSysInfo::majorVersion().toInt() >= 23 ? "org.lingmo.Gesture1" : "com.lingmo.daemon.Gesture"; }
+inline const char *getGesturePath() { return Dtk::Core::DSysInfo::majorVersion().toInt() >= 23 ? "/org/lingmo/Gesture1" : "/com/lingmo/daemon/Gesture"; }
+inline const char *getGestureInterface() { return Dtk::Core::DSysInfo::majorVersion().toInt() >= 23 ? "org.lingmo.Gesture1" : "com.lingmo.daemon.Gesture"; }
 #define GESTURE_SERVICE          getGestureService()
 #define GESTURE_PATH             getGesturePath()
 #define GESTURE_INTERFACE        getGestureInterface()
 #define GESTURE_SIGNAL           "Event"
 
 // deepin wm 窗管
-#define WM_SERVICE                       "com.deepin.wm"
-#define WM_PATH                         "/com/deepin/wm"
-#define WM_INTERFACE                    "com.deepin.wm"
+#define WM_SERVICE                       "com.lingmo.wm"
+#define WM_PATH                         "/com/lingmo/wm"
+#define WM_INTERFACE                    "com.lingmo.wm"
 #define WM_WORKSPACESWITCHED            "WorkspaceSwitched"
 
 #define dbusPlaySound(sound)                                                   \
